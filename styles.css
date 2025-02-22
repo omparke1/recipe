@@ -1,16 +1,16 @@
 /* fonts */
 .bebas-neue-regular {
-    font-family: "Bebas Neue", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .montserrat {
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  }
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* styles */
   :root {
@@ -19,8 +19,8 @@
     --teal: #7ABFBF;
     --lt-blue: rgba(122, 191, 191, .5);
     --orange: #EB5428;
-    --title: 'Bebas Neue' serif;
-    --main-font: 'Montserrat' serif;
+    --title: "Bebas Neue", serif;
+    --main-font: "Montserrat", serif;
   }
 
 /* CSS reset */
@@ -69,7 +69,110 @@
 }
 
 /* Media Query - Small screen  */
+@media screen and (min-width: 414px) {
+  #main-nav{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    margin: 1rem 1.95rem;
+  }
 
+  #menu-icon {
+    padding: 1.75rem 1.75rem 1.55rem 2rem;
+    margin: -1.75rem -1.95rem -1.75rem -2rem;
+    background: #ffffff;
+    border-bottom: 3px solid #e3dede;
+  }
+
+  #home-text {
+    text-decoration: none;
+    visibility: hidden;
+  }
+
+  #home svg {
+    display: inline-block;
+    padding: .5rem 7.5rem 1rem;
+    margin: 0 -2rem 0 2rem;
+    background: var(--orange);
+    position: absolute;
+    top: -1rem;
+    right: -9.5rem;
+    border-bottom: 3px solid #e3dede;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 60%;
+    left: -2rem;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 107px;
+    border-radius: 5px;
+  }
+ 
+  .dropdown li {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .dropdown li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    padding: 8px;
+    font-family: var(--main-font);
+    margin-left: -.70rem;
+  }
+
+  .dropdown li a img {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    display: none;
+  }
+  
+  #menu:hover .dropdown {
+    display: block;
+  }
+
+  #menu-text a {
+    position: absolute;
+    top: 2.5rem;
+    right: 9.60rem;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--title);
+    color: var(--black);
+  }
+
+  #sign-icon {
+    display: inline-block;
+    position: absolute;
+    top: -2.43rem;
+    right: -17.80rem;
+    padding: 2rem;
+    border-bottom: 3px solid #e3dede;
+  }
+
+  #sign-text a {
+    position: absolute;
+    top: 2.3rem;
+    right: -16.7rem;
+    font-family: var(--title);
+    color: var(--black);
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  
+
+
+}
 
 
 /* Media Query - Medium screen */
