@@ -92,17 +92,16 @@
   #home svg {
     display: inline-block;
     padding: .5rem 7.5rem 1rem;
-    margin: 0 -2rem 0 2rem;
     background: var(--orange);
     position: absolute;
     top: -1rem;
-    right: -9.5rem;
+    margin-left: 4.6rem;
     border-bottom: 3px solid #e3dede;
   }
 
   .dropdown {
     position: absolute;
-    top: 60%;
+    top: 35%;
     left: -2rem;
     background: white;
     list-style: none;
@@ -141,9 +140,8 @@
   }
 
   #menu-text a {
-    position: absolute;
-    top: 2.5rem;
-    right: 9.60rem;
+    margin-top: 2.5rem;
+    margin-left: .25rem;
     text-decoration: none;
     font-size: 20px;
     font-family: var(--title);
@@ -153,22 +151,40 @@
   #sign-icon {
     display: inline-block;
     position: absolute;
-    top: -2.43rem;
-    right: -17.80rem;
-    padding: 2rem;
+    top: -2.2rem;
+    margin-left: 23.2rem;
+    padding: 2rem 2rem 1.75rem 2rem;
     border-bottom: 3px solid #e3dede;
   }
 
   #sign-text a {
     position: absolute;
-    top: 2.3rem;
-    right: -16.7rem;
+    top: 2.5rem;
+    right: -8.7rem;
+    margin-left: 9.3rem;
     font-family: var(--title);
     color: var(--black);
     font-size: 20px;
     text-decoration: none;
   }
 
+  nav span input {
+    align-content: center;
+    margin-top: 2rem;
+    position: relative;
+    margin-right: 0;
+    padding: 1rem 11rem 1rem 0;
+    left: 2rem;
+    border: 2px solid var(--orange);
+  }
+
+  nav span svg {
+    position: absolute;
+    right: -5.55rem;
+    top: 6.95rem;
+    padding: .35rem .55rem;
+    background: var(--orange);
+  }
   
 
 
