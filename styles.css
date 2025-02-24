@@ -74,14 +74,18 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    margin: 1rem 1.95rem;
+    margin: 1rem 2vw;
   }
 
-  #menu-icon {
-    padding: 1.75rem 1.75rem 1.55rem 2rem;
-    margin: -1.75rem -1.95rem -1.75rem -2rem;
+  #menu-icon svg {
+    padding: 1.75rem .75rem 1.55rem 3rem;
+    margin: -1.75rem -2vw -1.75rem;
     background: #ffffff;
     border-bottom: 3px solid #e3dede;
+    position: absolute;
+    top: 0.2rem;
+    right: 50%;
+    width: 40%;
   }
 
   #home-text {
@@ -91,24 +95,27 @@
 
   #home svg {
     display: inline-block;
-    padding: .5rem 7.5rem 1rem;
+    padding: .5rem 27vw 1rem 27vw;
     background: var(--orange);
     position: absolute;
     top: -1rem;
-    margin-left: 4.6rem;
+    left: 44%;
     border-bottom: 3px solid #e3dede;
+    height: auto;
+    justify-content: center;
   }
 
   .dropdown {
     position: absolute;
-    top: 35%;
-    left: -2rem;
+    top: 45%;
+    left: -2vw;
     background: white;
     list-style: none;
     padding: 0;
     margin: 0;
     display: none;
-    width: 107px;
+    width: 100px;
+    max-width: 25vw;
     border-radius: 5px;
   }
  
@@ -125,12 +132,13 @@
     font-size: 18px;
     padding: 8px;
     font-family: var(--main-font);
-    margin-left: -.70rem;
+    margin-left: -0.7rem;
   }
 
   .dropdown li a img {
-    width: 35px;
-    height: 35px;
+    width: 100%;
+    max-width: 35px;
+    height: auto;
     margin-left: 5px;
     display: none;
   }
@@ -140,52 +148,62 @@
   }
 
   #menu-text a {
-    margin-top: 2.5rem;
-    margin-left: .25rem;
+    z-index: 1;
+    position: absolute;
+    margin-top: 2.6rem;
+    margin-left: 3.7vw;
     text-decoration: none;
     font-size: 20px;
     font-family: var(--title);
     color: var(--black);
-  }
-
-  #sign-icon {
-    display: inline-block;
-    position: absolute;
-    top: -2.2rem;
-    margin-left: 23.2rem;
-    padding: 2rem 2rem 1.75rem 2rem;
-    border-bottom: 3px solid #e3dede;
   }
 
   #sign-text a {
+    z-index: 10;
     position: absolute;
-    top: 2.5rem;
-    right: -8.7rem;
-    margin-left: 9.3rem;
+    top: 2.7rem;
+    right: -57.5vw;
     font-family: var(--title);
     color: var(--black);
     font-size: 20px;
     text-decoration: none;
+  }
+
+  #sign-icon svg {
+    padding: 1.75rem 12.75vw 1.55rem 1.5vw;
+    margin: -1.75rem -60.3vw -1.75rem 0;
+    background: #ffffff;
+    border-bottom: 3px solid #e3dede;
+    position: absolute;
+    top: .2rem;
+    right: -31%;
+    width: 40%;
   }
 
   nav span input {
     align-content: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
     position: relative;
-    margin-right: 0;
-    padding: 1rem 11rem 1rem 0;
-    left: 2rem;
+    padding: 1rem 10vw 1rem 0;
+    left: 18.5vw;
     border: 2px solid var(--orange);
+    width: 152%;
   }
 
   nav span svg {
     position: absolute;
-    right: -5.55rem;
-    top: 6.95rem;
-    padding: .35rem .55rem;
+    right: -40vw;
+    top: 6rem;
+    padding: 0.36rem 1vw;
     background: var(--orange);
+    height: auto;
   }
   
+  header {
+    position: relative;
+    top: 8rem;
+    margin-top: 0
+  }
 
 
 }
