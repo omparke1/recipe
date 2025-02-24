@@ -201,11 +201,30 @@
   
   header {
     position: relative;
-    top: 8rem;
-    margin-top: 0
+    top: 5.3rem;
+    margin: 0 0 1rem;
+    background: var(--white);
   }
 
+  header h1 {
+    position: absolute;
+    top: 7rem;
+    right: 20%;
+    font-family: var(--title);
+    font-size: 40px;
+    width: 45%;
+  }
 
+  header nav ul {
+    display: flex;
+    position: absolute;
+    top: 13rem;
+    right: 10rem;
+  }
+
+  main img {
+    margin-top: 25rem;
+  }
 }
 
 
