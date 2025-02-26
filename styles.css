@@ -204,7 +204,7 @@
     top: 5.3rem;
     margin: 0 0 1rem;
     background: var(--white);
-    padding-bottom: 15.5rem;
+    padding-bottom: 0;
   }
 
   header h1 {
@@ -242,7 +242,7 @@
     right: 1rem;
   }
 
-  .text {
+  .text-top {
     position: relative;
     right: -3rem;
   }
@@ -261,9 +261,14 @@
     margin-right: 1.80rem;
   }
 
+  #taco-img {
+    padding-top: 16rem;
+    background: var(--white);
+  }
+
   main img {
     margin-top: 4rem;
-    height: 50%;
+    height: auto;
     width: auto;
   }
 
@@ -300,7 +305,7 @@
   #ingredients ul li {
     font-family: var(--main-font);
     font-size: 16px;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
   }
 
   #directions ol {
@@ -310,7 +315,7 @@
   #directions ol li {
     font-family: var(--main-font);
     font-size: 16px;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin: 0 1rem 1.25rem 2rem;
     box-sizing: border-box;
     max-width: 100%;
@@ -319,18 +324,23 @@
   #side-dishes {
     background: var(--teal);
     border-bottom: 2rem solid var(--white);
-    max-height: 50rem;
+    max-height: 60rem;
     height: auto;
-    padding-bottom: 0;
+    margin-bottom: 2rem;
     width: 100%;
     max-width: 1200px;
   }
 
-  #side-dishes h2 {
-    padding-top: 1rem;
+  h2 {
+    padding-top: 0rem;
     padding-bottom: 0;
     text-align: center;
+    margin-top: 0rem;
+  }
+
+  #side-dishes {
     margin-bottom: 0;
+    margin-top: 4rem;
   }
 
   #sides-container {
@@ -338,7 +348,7 @@
     top: -4rem;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 3.8rem;
   }
 
   #rice h3 {
@@ -531,7 +541,72 @@
 
   footer {
     background: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
   }
+
+  footer #social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  footer #social div a {
+    text-decoration: none;
+    color: var(--orange);
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative; 
+    top: 1rem;
+    right: 2rem;
+  }
+
+  .text {
+    position: relative;
+    text-align: center;
+    right: -3.6rem;
+    top: 1.51rem;
+  }
+
+  footer #social div img svg {
+    position: absolute; 
+    width: 2rem;
+    height: 2rem;
+    top: -3rem;
+    right: -1.5rem;
+  }
+
+  footer #social #tik-tok {
+    position: relative;
+    right: -3.75rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-right: .5rem;
+  }
+
+  #good-eats img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin: 1rem auto;
+  }
+
+  #good-eats p {
+    text-align: center;
+    position: relative;
+    top: 30rem;
+    font-family: var(--title);
+    font-size: 20px;
+  }
+
+  main {
+    flex: 1;
+  }
+
 }
 
 
