@@ -324,7 +324,7 @@
   #side-dishes {
     background: var(--teal);
     border-bottom: 2rem solid var(--white);
-    max-height: 60rem;
+    max-height: 65rem;
     height: auto;
     margin-bottom: 2rem;
     width: 100%;
@@ -552,6 +552,7 @@
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    margin-bottom: .50rem;
   }
 
   footer #social div a {
@@ -590,15 +591,18 @@
 
   #good-eats img {
     display: block;
-    width: 80%;
-    height: 80%;
-    margin: 1rem auto;
+    width: 73%;
+    height: 73%;
+    margin: .50rem auto 2rem;
   }
 
   #good-eats p {
+    display: flex;
     text-align: center;
-    position: relative;
-    top: 30rem;
+    position: absolute;
+    top: 107%;
+    left: 40%;
+    bottom: 0;
     font-family: var(--title);
     font-size: 20px;
   }
@@ -606,12 +610,13 @@
   main {
     flex: 1;
   }
-
 }
 
-
 /* Media Query - Medium screen */
+@media screen and (min-width: 768px) {
 
+
+}
 
 
 /* Media Query - Large screen */
