@@ -319,176 +319,197 @@
   #side-dishes {
     background: var(--teal);
     border-bottom: 2rem solid var(--white);
-    height: 50rem;
-    margin-bottom: 2rem;
+    max-height: 50rem;
+    height: auto;
+    padding-bottom: 0;
+    width: 100%;
+    max-width: 1200px;
   }
 
   #side-dishes h2 {
     padding-top: 1rem;
     padding-bottom: 0;
-  }
-
-  #sides-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 0;
+    text-align: center;
     margin-bottom: 0;
   }
 
+  #sides-container {
+    position: relative;
+    top: -4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
   #rice h3 {
+    display: flex;
     text-align: center;
     font-family: var(--title);
     font-size: 25px;
     position: relative;
-    top: 5.5rem;
-    left: 0;
+    top: 7.15rem;
+    left: 12.30rem;
+    margin-bottom: 1.5rem;
   }
 
   #rice img {
     padding-left: 1.85rem;
     width: 30%;
-    height: 30%;
+    height: 35%;
+    max-width: 150px;
   }
 
   #rice p {
+    display: flex;
     text-align: center;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
-    top: -6.5rem;
-    left: 3.75rem;
+    top: -6.25rem;
+    left: 12.15rem;
+    margin: 0 0 1rem;
   }
 
   #rice p b {
+    display: flex;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
     top: -0.75rem;
-    left: -5.7rem;
     font-weight: bold;
   }
 
   #rice svg {
     position: relative;
     margin-left: .5rem;
-    top: -6.75rem;
+    top: -7.25rem;
     left: 11.5rem;
     width: 7%;
     height: 7%;
   }
 
   #salsa h3 {
+    display: flex;
     text-align: center;
     font-family: var(--title);
     font-size: 25px;
     position: relative;
     top: -7.5rem;
-    left: -1.75rem;
+    left: 12.5rem;
   }
 
   #salsa img {
     padding-left: 2rem;
     width: 30%;
-    height: 30%;
+    height: 35%;
+    max-width: 150px;
     position: relative;
     top: -13rem;
   }
 
   #salsa p {
+    display: flex;
     text-align: center;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
-    top: -18.90rem;
-    left: 4rem;
+    top: -19.75rem;
+    left: 11.5rem;
+    width: 80%;
   }
 
   #salsa p b {
+    display: flex;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
     top: -0.75rem;
-    left: -5.7rem;
     font-weight: bold;
   }
 
   #salsa svg {
     position: relative;
     margin-left: .5rem;
-    top: -19.25rem;
+    top: -20rem;
     left: 11.75rem;
     width: 7%;
     height: 7%;
   }
 
   #guac h3 {
+    display: flex;
     text-align: center;
     font-family: var(--title);
     font-size: 25px;
     position: relative;
     top: -20.5rem;
-    right: .30rem;
+    right: -12.45rem;
   }
 
   #guac img {
     padding-left: 2rem;
     width: 30%;
-    height: 30%;
+    height: 35%;
+    max-width: 150px;
     position: relative;
     top: -26rem;
   }
 
   #guac p {
+    display: flex;
     text-align: center;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
-    top: -32rem;
-    left: 1rem;
+    top: -32.75rem;
+    left: 11.5rem;
   }
 
   #guac p b {
+    display: flex;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
-    top: -0.75rem;
-    right: 2.85rem;
+    top: -.70rem;
     font-weight: bold;
   }
 
   #guac svg {
     position: relative;
     margin-left: .5rem;
-    top: -32.50rem;
-    left: 11.55rem;
+    top: -32.85rem;
+    left: 11.60rem;
     width: 7%;
     height: 7%;
   }
 
   #tortillas h3 {
+    display: flex;
     text-align: center;
     font-family: var(--title);
     font-size: 25px;
     position: relative;
-    top: -33.20rem;
-    right: .80rem;
+    top: -33.05rem;
+    right: -12.5rem;
   }
 
   #tortillas img {
     padding-left: 2rem;
     width: 30%;
-    height: 30%;
+    height: 35%;
+    max-width: 150px;
     position: relative;
     top: -38.5rem;
   }
 
   #tortillas p {
+    display: flex;
     text-align: center;
     font-family: var(--main-font);
     font-size: 16px;
     position: relative;
-    top: -44.25rem;
-    left: 3rem;
+    top: -45.35rem;
+    left: 11.50rem;
   }
 
   #tortillas p b {
@@ -496,14 +517,13 @@
     font-size: 16px;
     position: relative;
     top: -0.75rem;
-    right: 4.85rem;
     font-weight: bold;
   }
 
   #tortillas svg {
     position: relative;
     margin-left: .5rem;
-    top: -45rem;
+    top: -45.5rem;
     left: 11.55rem;
     width: 7%;
     height: 7%;
