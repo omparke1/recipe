@@ -128,14 +128,15 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--black);
+    color: var(--orange);
     font-size: 18px;
+    text-transform: uppercase;
     padding: 8px;
-    font-family: var(--main-font);
+    font-family: var(--title);
     margin-left: -0.7rem;
   }
 
-  .dropdown li a img {
+  .dropdown li img {
     width: 100%;
     max-width: 35px;
     height: auto;
@@ -156,6 +157,7 @@
     font-size: 20px;
     font-family: var(--title);
     color: var(--black);
+    text-transform: uppercase;
   }
 
   #sign-text a {
@@ -285,15 +287,26 @@
     padding: 2rem 0 1.5rem;
   }
 
-  #details p {
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 1.5rem;
-    margin: 0 1rem;
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 44%;
+    max-width: 250px;
+    min-width: 100px;
+    margin-left: 1.25rem;
   }
 
-  #details p b {
+  dl dt {
     font-weight: bold;
+    font-family: var(--main-font);
+    font-size: 16px;
+  }
+
+  dl dd {
+    font-family: var(--main-font);
+    font-size: 16px;
+    margin-left: 0;
   }
 
   #ingredients ul {
@@ -615,6 +628,68 @@
 /* Media Query - Medium screen */
 @media screen and (min-width: 768px) {
 
+  #main-nav {
+    padding: 1.5rem 40rem 0 0;
+    margin: 1rem 0;
+    background: white;
+  }
+
+  #menu-icon, #menu-text {
+    display: none;
+  }
+
+  #home svg {
+    left: 0;
+    padding: .5rem .5rem;
+    border-bottom: none;
+    height: 30%;
+    width: 8%;
+  }
+
+  .dropdown {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr repeat(7, 1fr);
+    background: none;
+    gap: .25rem;
+  }
+
+  .dropdown li a {
+    margin-left: 1.25rem;
+    margin-top: 3rem;
+    padding: 0 .50rem;
+  }
+
+  .dropdown li img {
+    display: block;
+    position: absolute;
+    bottom: 65%;
+    margin-left: .5rem;
+    top: -4rem;
+    width: 100%;
+    height: 50%;
+  }
+
+  #menu:hover .dropdown {
+    display: flex;
+  }
+
+  #sign-icon svg {
+    right: 0;
+    padding: 0;
+    top: 0;
+    width: 25%;
+    margin-top: -.5rem;
+    margin-right: -24rem;
+    background: none;
+    border-bottom: none;
+  }
+
+  #sign-text a {
+    left: 180%;
+    top: 2rem;
+    z-index: auto;
+  }
 
 }
 
