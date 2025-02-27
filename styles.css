@@ -95,14 +95,19 @@
 
   #home svg {
     display: inline-block;
-    padding: .5rem 27vw 1rem 27vw;
+    padding: .5rem 26vw 1rem 25.5vw;
     background: var(--orange);
     position: absolute;
     top: -1rem;
     left: 44%;
     border-bottom: 3px solid #e3dede;
-    height: auto;
+    height: 40%;
     justify-content: center;
+    z-index: 99;
+    width: 33%;
+    min-width: 59px;
+    max-width: 144px;
+    margin-left: .25rem;
   }
 
   .dropdown {
@@ -164,22 +169,25 @@
     z-index: 10;
     position: absolute;
     top: 2.7rem;
-    right: -57.5vw;
+    right: -84.5vw;
     font-family: var(--title);
     color: var(--black);
     font-size: 20px;
     text-decoration: none;
+    min-width: 200px;
   }
 
   #sign-icon svg {
-    padding: 1.75rem 12.75vw 1.55rem 1.5vw;
-    margin: -1.75rem -60.3vw -1.75rem 0;
+    padding: 1.75rem 0.75vw 1.55rem 4.5vw;
+    margin: -1.75rem -88.3vw -1.75rem 0;
     background: #ffffff;
     border-bottom: 3px solid #e3dede;
     position: absolute;
     top: .2rem;
-    right: -31%;
+    right: 50%;
     width: 40%;
+    min-width: 171px;
+    max-width: 200px;
   }
 
   nav span input {
@@ -633,6 +641,7 @@
     margin: 1rem 0;
     background: white;
     border-bottom: 3px solid #e3dede;
+    width: 100%;
   }
 
   #menu-icon, #menu-text {
@@ -641,10 +650,11 @@
 
   #home svg {
     left: 0;
-    padding: .5rem .5rem;
+    padding: .5rem 0rem;
     border-bottom: none;
     height: 30%;
     width: 8%;
+    margin-left: 0;
   }
 
   .dropdown {
@@ -653,57 +663,85 @@
     grid-template-columns: 1fr repeat(7, 1fr);
     background: none;
     gap: .25rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .dropdown li a {
-    margin-left: 2.15rem;
-    margin-top: 3rem;
+    margin-left: 2.5vw;
+    margin-top: 13vh;
     padding: 0;
+    text-align: center;
   }
 
   .dropdown li img {
     display: block;
     position: absolute;
     bottom: 65%;
-    margin-left: .5rem;
+    margin-left: 0;
     top: -4rem;
     width: 100%;
-    height: 50%;
-    padding: 0 2rem;
+    height: 65%;
+    padding: 0 1.5rem;
+    max-width: 65px;
   }
 
   #menu:hover .dropdown {
     display: flex;
+    margin-left: 3.25vw;
+    margin-top: 0;
+    width: 100%;
+    padding: 0 1.5rem;
+    max-width: 65px;
+  }
+
+  #sign-sec {
+    float: right;
   }
 
   #sign-icon svg {
-    right: 0;
+    left: 49.5vw;
     padding: 0;
     top: 0;
-    width: 25%;
+    width: 50%;
+    max-width: 1200px;
+    min-width: 500px;
     margin-top: -.65rem;
-    margin-right: 1.45rem;
+    margin-right: 77.5vw;
     background: none;
     border-bottom: none;
   }
 
-  #sign-text a {
-    left: 81%;
+  #sign-text a { 
+    left: 79.5%;
     top: 2rem;
+    transform: translateX(-50%);
     z-index: auto;
+    max-width: 1200px;
+    min-width: 850px;
+    width: 50%;
   }
   
   span input {
-    margin-left: 8.5rem;
+    margin-left: 13%;
     margin-right: 0;
     top: -7.8rem;
+    width: 26.5vw;
+    max-width: 320px;
+    min-width: 375px;
   }
 
   span svg {
-    left: 38rem;
-    transform: translateY(-196%);
+    left: 50%;
+    transform: translateX(-261%) translateY(-196%);
   }
 
+  h1 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 15rem;
+  }
 }
 
 
