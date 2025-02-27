@@ -985,10 +985,33 @@
 }
 
 /* Media Query - Large screen */
-@media screen and (min-width: 1200px) 
+@media screen and (min-width: 1200px) {
 
+#home svg {
+  height: 103%;
+  width: 100%;
+}
 
-{
+#sign-icon svg {
+  left: 56vw;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#sign-text a {
+  left: 85.5%;
+}
+
+.dropdown {
+  left: 12%;
+  top: -5%;
+}
+
+#main-nav {
+  height: 11%;
+}
+
+}
 
 
 
