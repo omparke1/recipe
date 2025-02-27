@@ -95,11 +95,11 @@
 
   #home svg {
     display: inline-block;
-    padding: .5rem 26vw 1rem 25.5vw;
+    padding: .5rem 22vw 1rem 21.75vw;
     background: var(--orange);
     position: absolute;
     top: -1rem;
-    left: 44%;
+    left: 34%;
     border-bottom: 3px solid #e3dede;
     height: 40%;
     justify-content: center;
@@ -157,7 +157,7 @@
     z-index: 1;
     position: absolute;
     margin-top: 2.6rem;
-    margin-left: 3.7vw;
+    margin-left: 5.7vw;
     text-decoration: none;
     font-size: 20px;
     font-family: var(--title);
@@ -169,7 +169,7 @@
     z-index: 10;
     position: absolute;
     top: 2.7rem;
-    right: -84.5vw;
+    right: -66.5vw;
     font-family: var(--title);
     color: var(--black);
     font-size: 20px;
@@ -178,13 +178,13 @@
   }
 
   #sign-icon svg {
-    padding: 1.75rem 0.75vw 1.55rem 4.5vw;
-    margin: -1.75rem -88.3vw -1.75rem 0;
+    padding: 1.75rem 0.75vw 1.55rem 5.8vw;
+    margin: -1.75rem -88.3vw -1.75rem 1rem;
     background: #ffffff;
     border-bottom: 3px solid #e3dede;
     position: absolute;
-    top: .2rem;
-    right: 50%;
+    top: 0.1rem;
+    right: 65%;
     width: 40%;
     min-width: 171px;
     max-width: 200px;
@@ -195,18 +195,20 @@
     margin-top: 5rem;
     position: relative;
     padding: 1rem 10vw 1rem 0;
-    left: 18.5vw;
+    margin-left: 18.5vw;
     border: 2px solid var(--orange);
-    width: 152%;
+    width: 115%;
+    max-width: 750px;
   }
 
   nav span svg {
     position: absolute;
-    right: -40vw;
+    right: -29vw;
     top: 6rem;
     padding: 0.36rem 1vw;
     background: var(--orange);
     height: auto;
+    max-width: 767px;
   }
   
   header {
@@ -219,12 +221,15 @@
 
   header h1 {
     position: absolute;
-    top: 7rem;
-    right: 21.5%;
+    margin-left: 0;
+   text-align: center;
     font-family: var(--title);
     font-size: 40px;
-    width: 45%;
+    width: 100%;
     align-items: center;
+    background: var(--white);
+    padding-top: 7rem;
+    padding-bottom: 7.2rem;
   }
 
   header nav {
@@ -273,7 +278,6 @@
 
   #taco-img {
     padding-top: 16rem;
-    background: var(--white);
   }
 
   main img {
@@ -669,10 +673,14 @@
   }
 
   .dropdown li a {
-    margin-left: 2.5vw;
-    margin-top: 13vh;
+    margin-left: 3.5vw;
+    margin-right: -6vw;
+    margin-top: 8vh;
     padding: 0;
     text-align: center;
+    position: relative;
+    max-width: 500px;
+    min-width: 100px;
   }
 
   .dropdown li img {
@@ -682,18 +690,22 @@
     margin-left: 0;
     top: -4rem;
     width: 100%;
-    height: 65%;
+    height: 55%;
     padding: 0 1.5rem;
     max-width: 65px;
   }
 
   #menu:hover .dropdown {
+    pointer-events: none !important;
     display: flex;
-    margin-left: 3.25vw;
-    margin-top: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr repeat(7, 1fr);
+    background: none;
+    gap: .25rem;
     width: 100%;
-    padding: 0 1.5rem;
-    max-width: 65px;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   #sign-sec {
@@ -701,7 +713,7 @@
   }
 
   #sign-icon svg {
-    left: 49.5vw;
+    left: 47vw;
     padding: 0;
     top: 0;
     width: 50%;
@@ -723,30 +735,260 @@
     width: 50%;
   }
   
-  span input {
+  nav span input {
     margin-left: 13%;
-    margin-right: 0;
     top: -7.8rem;
-    width: 26.5vw;
-    max-width: 320px;
-    min-width: 375px;
+    left: 9rem;
+    width: 100%;
+    padding-right: 0;
+    max-width: 49%;
+    min-width: 49%;
   }
 
-  span svg {
-    left: 50%;
+  nav span svg {
+    left: 54%;
     transform: translateX(-261%) translateY(-196%);
   }
 
-  h1 {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 15rem;
+  header h1 {
+    text-align: left;
+    z-index: 22;
+    padding-bottom: 1.15rem;
+    padding-top: 1.1rem;
+    margin-top: 5.60rem;
+    padding-left: 1rem;
   }
+
+  header nav {
+    z-index: 99;
+    position: absolute;
+    margin-left: 26vw;
+    top: -1rem;
+  }
+
+  #taco-img {
+    height: 270%;
+    width: 100%;
+    position: relative;
+    max-height: 1500px;
+    padding-top: 11rem;
+    overflow: hidden; 
+  }
+
+  #taco-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #taco-img::before {
+    content: "";
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .15rem;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 300px;
+    padding-left: 3rem;
+  }
+
+  dt {
+    white-space: nowrap;
+  }
+  
+  dd {
+    margin: 0;
+    padding: 0.15rem;
+
+  }
+
+  #ingredient-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  
+  #directions ol li {
+    line-height: 2.5rem;
+  }
+
+  #side-dishes {
+    margin-top: 0rem;
+    border: none;
+    padding-bottom: 2rem;
+  }
+
+  #sides-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    right: 2rem;
+    height: 100%;
+  }
+
+  #side-dishes h2 {
+    padding-bottom: 0rem;
+  }
+
+  #rice img {
+    height: 33%;
+    width: 130px;
+  }
+
+  #rice h3 {
+    left: 11rem;
+  }
+
+  #rice p {
+    left: 11rem;
+    top: -5rem;
+  }
+
+  #rice p b {
+    top: 0;
+  }
+
+  #rice svg {
+    width: 20px;
+    height: 6%;
+    left: 14.5rem;
+    top: -7.35rem;
+  }
+  
+  #salsa {
+    position: absolute;
+    top: 14.4rem;
+    right: 6rem;
+  }
+
+  #salsa img {
+    width: 46%;
+    height: 33%;
+  }
+
+  #salsa h3 {
+    left: 10.5rem;
+  }
+
+  #salsa p {
+    left: 9.5rem;
+    top: -19.5rem;
+    text-align: left;
+  }
+
+  #salsa svg {
+    width: 8%;
+    height: 7%;
+    top: -21.65rem;
+    left: 14rem;
+  }
+
+  #guac h3 {
+    left: -14rem;
+    top: 17rem;
+    width: 100%;
+  }
+
+  #guac img {
+    float: left;
+    width: 133px;
+    height: 36%;
+    top: 11.5rem;
+    left: -25.30rem;
+    max-width: 133px;
+  }
+
+  #guac p {
+    top: 6.75rem;
+    left: -15rem;
+    width: 100%;
+  }
+
+  #guac p b {
+    top: 0.5rem;
+    left: 0rem;
+  }
+
+
+  #guac svg {
+    width: 6%;
+    height: 6%;
+    top: 5.90rem;
+    left: -10.5rem;
+  }
+
+  #tortillas {
+    position: absolute;
+    top: 50.5rem;
+    right: 7.9rem;
+  }
+
+  #tortillas h3 {
+    left: 10.5rem;
+  }
+
+  #tortillas img {
+    width: 53%;
+    height: 33%;
+  }
+
+  #tortillas p {
+    top: -44.85rem;
+    left: 9.5rem;
+  }
+
+  #tortillas p b {
+    top: 0.75rem;
+    left: 0rem;
+  }
+
+  #tortillas svg {
+    width: 9%;
+    height: 7%;
+    top: -45.45rem;
+    left: 14rem;
+  }
+
+  #social {
+    margin-left: 18rem;
+    margin-top: 2rem;
+    margin-right: -4rem;
+  }
+
+  #good-eats {
+    position: absolute;
+    width: 55%;
+    height: 490px;
+    margin-left: 26px;
+    bottom: -27rem;
+    left: -3rem;
+  }
+
+  #good-eats p {
+    position: absolute;
+    top: 26.5rem;
+  }
+
 }
 
-
 /* Media Query - Large screen */
+@media screen and (min-width: 1200px) 
 
+
+{
 
 
 
