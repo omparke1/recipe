@@ -1134,7 +1134,230 @@ header nav {
   line-height: 2rem;
 }
 
+#details h2 {
+  background: var(--black);
+  color: var(--teal);
+  padding-top: 1rem;
 }
 
+dl {
+  background: var(--black);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  gap: .5rem 5rem;
+  padding: 0 27rem 0 22.05rem;
+  max-width: 100%;
+  color: var(--teal);
+  margin: 0 auto;
+  justify-content: center;
+}
 
+dt, dd {
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+dt {
+  padding-bottom: 0rem;
+}
+
+dd {
+  padding: 0 0.5rem 1rem;
+  width: 100%;
+  margin-right: 3rem;
+}
+
+dl > dt {
+  grid-row: 1;
+}
+
+dl> dd {
+  grid-row: 2;
+}
+
+#side-dishes {
+  max-width: 1400px;
+}
+
+#sides-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-rows: 1fr;
+}
+
+#rice {
+  margin-left: 2rem;
+  position: initial;
+  padding: 0;
+  margin-right: 0;
+}
+
+#rice h3 {
+  top: 25rem;
+  left: 2rem;
+}
+
+#rice img {
+  width: 98%;
+  height: 52%;
+  max-width: 270px;
+}
+
+#rice p {
+  top: 5rem;
+  left: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+#rice p b {
+  top: -.75rem;
+}
+
+#rice svg {
+  top: 1.55rem;
+  left: 6rem;
+}
+
+#guac {
+  position: absolute;
+  left: 45rem;
+  margin-left: 0;
+  padding: 0;
+}
+
+#guac h3 {
+  top: 24.5rem;
+  left: -3.25rem;
+}
+
+#guac img {
+  width: 77%;
+  height: 49%;
+  max-width: 253px;
+  margin-left: 20rem;
+  top: 1.5rem;
+}
+
+#guac p {
+  top: 6.65rem;
+  left: -4rem;
+}
+
+#guac svg {
+  top: 5.75rem;
+  left: 1rem;
+  width: 4.5%;
+  height: 7%;
+}
+
+#salsa {
+  position: initial;
+  left: 45rem;
+  margin-left: 0;
+  padding: 0;
+}
+
+#salsa h3 {
+  top: 25rem;
+  left: 4rem;
+}
+
+#salsa img {
+  width: 85%;
+  height: 52%;
+  max-width: 266px;
+  margin-left: 2rem;
+  top: 1.5rem;
+}
+
+#salsa p {
+  top: 5.25rem;
+  left: 3rem;
+}
+
+#salsa svg {
+  top: 2.65rem;
+  left: 8rem;
+  width: 7%;
+  height: 7%;
+}
+
+#tortillas {
+  position: absolute;
+  left: 45rem;
+  margin-left: 0;
+  padding: 0;
+}
+
+#tortillas h3 {
+  top: -25.95rem;
+  left: 15.15rem;
+}
+
+#tortillas img {
+  width: 77%;
+  height: 49%;
+  max-width: 253px;
+  margin-left: 13rem;
+  top: -49rem;
+}
+
+#tortillas p {
+  top: -45.25rem;
+  left: 14.25rem;
+}
+
+#tortillas svg {
+  top: -45.85rem;
+  left: 19rem;
+  width: 5.85%;
+  height: 7%;
+}
+
+footer {
+  background: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer #social {
+  gap: 3rem;
+}
+
+.img a svg {
+  left: 9rem;
+  top: -3rem;
+  margin: 0 -4rem;
+}
+
+.text {
+  right: -11rem;
+}
+
+footer #social #tik-tok {
+  right: -10.5rem;
+}
+
+#good-eats {
+  background: white;
+  padding-right: 42rem;
+}
+
+#good-eats img {
+  position: absolute;
+  top: -4rem;
+  width: 33%;
+  margin-left: 4rem;
+}
+
+#good-eats p {
+  left: 30rem;
+  top: -2.35rem;
+}
+
+}
 
