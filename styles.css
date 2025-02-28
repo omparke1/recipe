@@ -237,7 +237,7 @@
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    padding-right: .5rem;
+    padding-right: 4.5rem;
   }
 
   header nav div {
@@ -259,13 +259,15 @@
 
   .text-top {
     position: relative;
-    right: -3rem;
+    right: -4rem;
+    gap: 1rem;
+    padding: 0;
   }
 
   header nav svg {
-    position: absolute; 
+    position: absolute;
+    gap: 1rem; 
     top: -3rem;
-    right: -1.5rem;
   }
 
   #print svg {
@@ -988,27 +990,148 @@
 @media screen and (min-width: 1200px) {
 
 #home svg {
-  height: 103%;
+  height: 93%;
   width: 100%;
+  margin-top: .5rem;
 }
 
 #sign-icon svg {
-  left: 56vw;
+  left: 58vw;
   margin-right: 0;
   padding-right: 0;
+  top: 1rem;
+  margin: 0 auto;
 }
 
 #sign-text a {
-  left: 85.5%;
+  left: 79%;
+  top: 3.85rem;
+  margin: 0 auto;
 }
 
 .dropdown {
+  margin-top: 18px;
+  left: 12%;
+  top: -5%;
+}
+
+.dropdown li a {
+  margin-right: -3rem;
+  right: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.dropdown li img {
+  height: 43%;
+  top: -4.5rem;
+}
+
+#menu:hover .dropdown {
+  pointer-events: none !important;
+  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr repeat(7, 1fr);
+  background: none;
+  margin-top: 18px;
   left: 12%;
   top: -5%;
 }
 
 #main-nav {
-  height: 11%;
+  position: absolute;
+  top: -15px;
+  height: 15%;
+  background: white;
+}
+
+#main-nav span input {
+  top: 0.5rem;
+  min-width: 50%;
+}
+
+#main-nav span svg {
+  top: 14.35rem;
+  left: 56%;;
+}
+
+body {
+  background: var(--white);
+  margin-top: none;
+}
+
+header h1 {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  background: none;
+  text-align: center;
+}
+
+#taco-img {
+  width: 40%;
+  height: 49rem;
+  margin-left: 7rem;
+  padding-top: 12.5rem;
+}
+
+#taco-img::before {
+  display: none;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: white;
+  left: -19.5rem;
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-bottom: 23.63rem;
+  margin-bottom: 2rem;
+  border: 3px solid var(--orange);
+  top: 11.20rem;
+  width: 3.25%;
+  position: absolute;
+  margin-left: 19.5rem;
+}
+
+.img a svg {
+  position: absolute;
+  margin-left: 1.9rem;
+  top: -19rem;
+  transform: translateX(-5%);
+}
+
+#print {
+  position: absolute;
+  margin-left: 3.15rem;
+  top: 3rem;
+  transform: translateX(-5%);
+}
+
+#jump-to {
+  position: absolute;
+  margin-left: 3.15rem;
+  top: 7.25rem;
+  transform: translateX(-5%);
+}
+
+.text-top a {
+  margin: 0;
+  padding: 0;
+  right: 75%;
+  top: 3.5rem;
+  height: 2.5rem;
+}
+
+#main-p {
+  margin-left: 38rem;
+  position: absolute;
+  top: 16.25rem;
+}
+
+#main-p p {
+  line-height: 2rem;
 }
 
 }
