@@ -1069,7 +1069,7 @@ header h1 {
 }
 
 #taco-img {
-  width: 40%;
+  width: 40.5%;
   height: 49rem;
   margin-left: 7rem;
   padding-top: 12.5rem;
@@ -1125,7 +1125,7 @@ header nav {
 }
 
 #main-p {
-  margin-left: 38rem;
+  margin-left: 42.5rem;
   position: absolute;
   top: 16.25rem;
 }
@@ -1178,7 +1178,7 @@ dl> dd {
 }
 
 #side-dishes {
-  max-width: 1400px;
+  max-width: 1500px;
 }
 
 #sides-container {
@@ -1186,6 +1186,7 @@ dl> dd {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   grid-template-rows: 1fr;
+  padding-right: 0;
 }
 
 #rice {
@@ -1328,18 +1329,27 @@ footer #social {
   gap: 3rem;
 }
 
-.img a svg {
-  left: 9rem;
+.img-bottom a svg {
+  position: absolute;
+  left: 13.5rem;
   top: -3rem;
-  margin: 0 -4rem;
+  margin: 0 3.75rem;
 }
 
 .text {
-  right: -11rem;
+  margin: 0 -8rem;
+  left: 15rem;
 }
 
 footer #social #tik-tok {
-  right: -10.5rem;
+  right: 93.5%;
+  left: 53%;
+}
+
+.img-tik-tok {
+  position: absolute;
+  left: 93.5%;
+  top: 35%;
 }
 
 #good-eats {
