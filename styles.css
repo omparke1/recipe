@@ -1147,7 +1147,7 @@ dl {
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
   gap: .5rem 5rem;
-  padding: 0 28rem 0 23rem;
+  padding: 0 29rem 0 23rem;
   max-width: 100%;
   color: var(--teal);
   margin: 0 auto;
@@ -1222,6 +1222,9 @@ dl> dd {
 #rice svg {
   top: 1.55rem;
   left: 6rem;
+  width: 7%;
+  height: 7%;
+  max-width: 7%;
 }
 
 #guac {
@@ -1239,7 +1242,7 @@ dl> dd {
 #guac img {
   width: 77%;
   height: 49%;
-  max-width: 253px;
+  max-width: 257px;
   margin-left: 20rem;
   top: 1.5rem;
 }
@@ -1254,6 +1257,7 @@ dl> dd {
   left: 1rem;
   width: 4.5%;
   height: 7%;
+  max-width: 4%;
 }
 
 #salsa {
@@ -1303,7 +1307,7 @@ dl> dd {
 #tortillas img {
   width: 77%;
   height: 49%;
-  max-width: 253px;
+  max-width: 257px;
   margin-left: 13rem;
   top: -49rem;
 }
@@ -1318,6 +1322,7 @@ dl> dd {
   left: 19rem;
   width: 5.85%;
   height: 7%;
+  max-width: 5%;
 }
 
 footer {
@@ -1334,7 +1339,7 @@ footer #social {
   position: absolute;
   left: 13.5rem;
   top: -3rem;
-  margin: 0 3.75rem;
+  margin: 0 4rem;
 }
 
 .text {
